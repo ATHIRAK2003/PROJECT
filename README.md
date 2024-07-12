@@ -1,2 +1,2 @@
 # PROJECT
-Project Completed
+Projects Completed
