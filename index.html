@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculators</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Financial Calculators</h1>
+
+    <div class="calculator" id="simple-interest">
+        <h2>Simple Interest Calculator</h2>
+        <input type="number" id="si-principal" placeholder="Principal Amount">
+        <input type="number" id="si-rate" placeholder="Interest Rate (%)">
+        <input type="number" id="si-time" placeholder="Time Period (years)">
+        <button onclick="calculateSimpleInterest()">Calculate</button>
+        <p id="si-result"></p>
+    </div>
+
+    <div class="calculator" id="compound-interest">
+        <h2>Compound Interest Calculator</h2>
+        <input type="number" id="ci-principal" placeholder="Principal Amount">
+        <input type="number" id="ci-rate" placeholder="Interest Rate (%)">
+        <input type="number" id="ci-frequency" placeholder="Compounding Frequency (times per year)">
+        <input type="number" id="ci-time" placeholder="Time Period (years)">
+        <button onclick="calculateCompoundInterest()">Calculate</button>
+        <p id="ci-result"></p>
+    </div>
+
+    <div class="calculator" id="currency-converter">
+        <h2>Currency Converter</h2>
+        <input type="number" id="cc-amount" placeholder="Amount">
+        <input type="text" id="cc-source" placeholder="Source Currency (e.g., USD)">
+        <input type="text" id="cc-target" placeholder="Target Currency (e.g., EUR)">
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="cc-result"></p>
+    </div>
+
+    <div class="calculator" id="salary-calculator">
+        <h2>Salary Calculator</h2>
+        <input type="number" id="sc-gross" placeholder="Gross Salary">
+        <input type="number" id="sc-deductions" placeholder="Deductions">
+        <input type="number" id="sc-bonuses" placeholder="Bonuses">
+        <button onclick="calculateNetSalary()">Calculate</button>
+        <p id="sc-result"></p>
+    </div>
+
+    <div class="calculator" id="retirement-calculator">
+        <h2>Retirement Calculator</h2>
+        <input type="number" id="rc-age" placeholder="Current Age">
+        <input type="number" id="rc-retirement" placeholder="Retirement Age">
+        <input type="number" id="rc-savings" placeholder="Current Savings">
+        <input type="number" id="rc-rate" placeholder="Expected Return Rate (%)">
+        <button onclick="calculateRetirement()">Calculate</button>
+        <p id="rc-result"></p>
+    </div>
+
+    <div class="calculator" id="sales-tax-calculator">
+        <h2>Sales and Tax Calculator</h2>
+        <input type="number" id="st-price" placeholder="Price">
+        <input type="number" id="st-tax" placeholder="Tax Rate (%)">
+        <button onclick="calculateSalesTax()">Calculate</button>
+        <p id="st-result"></p>
+    </div>
+
+    <div class="calculator" id="investment-calculator">
+        <h2>Investment Calculator</h2>
+        <input type="number" id="ic-initial" placeholder="Initial Investment">
+        <input type="number" id="ic-contributions" placeholder="Periodic Contributions">
+        <input type="number" id="ic-rate" placeholder="Expected Return Rate (%)">
+        <input type="number" id="ic-time" placeholder="Time Period (years)">
+        <button onclick="calculateInvestment()">Calculate</button>
+        <p id="ic-result"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
